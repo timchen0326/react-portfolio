@@ -1,0 +1,16 @@
+{
+    "portfolio": [
+        {
+            "title": "Project 1",
+            "description": "Description of project 1",
+            "cover": "/portolio/1/IMG_20E35C9E0D59-1.jpeg",
+            "link": "https://example.com/project1"
+        },
+        {
+            "title": "Project 2",
+            "description": "Description of project 2",
+            "cover": "/images/project2.jpg",
+            "link": "https://example.com/project2"
+        }
+    ]
+}
