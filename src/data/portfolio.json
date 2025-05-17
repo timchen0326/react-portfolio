@@ -13,6 +13,12 @@
       "link": "https://timchen0326.github.io/portfolio-website/toronto-crime-analysis.html"
     },
     {
+      "title": "Hoops Hub",
+      "description": "Java, Swing",
+      "cover": "/portfolio/Screenshot 2025-05-17 at 11.02.36 AM.png",
+      "link": "https://github.com/timchen0326/HoopsHub"
+    },
+    {
       "title": "2024 U.S. Election Forecast",
       "description": "R, Quarto ",
       "cover": "/portfolio/us-electoral-map.jpg",
