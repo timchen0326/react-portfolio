@@ -125,7 +125,14 @@
         .image-box {
             height: 200px;
             max-width: calc(50% - 10px);
-            flex: 1 1 50%; // Add this line to ensure 2 per row
+            flex: 1 1 50%;
+
+            .title {
+                font-size: clamp(12px, 3vw, 18px);
+            }
+            .description {
+                font-size: clamp(10px, 2vw, 14px);
+            }
         }
     }
 }
