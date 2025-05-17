@@ -1,0 +1,52 @@
+{
+  "portfolio": [
+    {
+      "title": "CSC311 ML Challenge",
+      "description": "Python, scikit-learn, Streamlit",
+      "cover": "/portfolio/Screenshot 2025-05-16 at 8.01.21 PM.png",
+      "link": "https://timchen0326.github.io/portfolio-website/ml-challenge.html"
+    },
+    {
+      "title": "Toronto Crime Analysis",
+      "description": "R, Quarto",
+      "cover": "/portfolio/6776f07d6a0f8.image.jpg",
+      "link": "https://timchen0326.github.io/portfolio-website/toronto-crime-analysis.html"
+    },
+    {
+      "title": "2024 U.S. Election Forecast",
+      "description": "R, Quarto ",
+      "cover": "/portfolio/us-electoral-map.jpg",
+      "link": "https://timchen0326.github.io/portfolio-website/us-presidential%20election.html"
+    },
+    {
+      "title": "Toronto Shelter Analysis",
+      "description": "R, Quarto ",
+      "cover": "/portfolio/default.jpg",
+      "link": "https://timchen0326.github.io/portfolio-website/toronto-shelter-analysis.html"
+    },
+    {
+      "title": "Bike Theft Analysis",
+      "description": "R, R Markdown",
+      "cover": "/portfolio/wilfferell-3-1.webp",
+      "link": "https://timchen0326.github.io/portfolio-website/bike-theft-analysis.html"
+    },
+    {
+      "title": "IMDb Analysis",
+      "description": "R, R Markdown",
+      "cover": "/portfolio/633558f4ed4b31fead1f3382_8.png",
+      "link": "https://timchen0326.github.io/portfolio-website/iMDb-analysis.html"
+    },
+    {
+      "title": "MAYOHR Internship",
+      "description": "TypeScript,React. HTML, CSS",
+      "cover": "/portfolio/c77-drmx7hbg.jpg",
+      "link": "https://timsplayland.vercel.app/projects/mayohr"
+    },
+    {
+      "title": "Toronto Traffic Collisions",
+      "description": "Tableau, Python",
+      "cover": "/portfolio/default.avif",
+      "link": "https://timchen0326.github.io/portfolio-website/traffic-collision-analysis.html"
+    }
+  ]
+}
