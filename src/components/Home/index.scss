@@ -89,7 +89,8 @@
       display: none;
     }
   
-    .home-page .text-zone {
+    .home-page {
+      .text-zone {
       position: initial;
       width: 100%;
       transform: none;
@@ -97,7 +98,7 @@
       box-sizing: border-box;
     }
   
-    .home-page .flat-button {
+    .flat-button {
       float: none;
       display: block;
       margin: 20px auto 0 auto;
@@ -113,15 +114,16 @@
       box-sizing: border-box;
       margin: auto;
       left: 0;
-    }
   
-    .logo-container svg {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
+      svg {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+      }
+    }
     }
   }
 
