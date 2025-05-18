@@ -42,7 +42,7 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={24}
+              idx={1}
             />
           </h1>
           <h2>Building Scalable Software &amp; Empowering Decisions with Analytics</h2>
