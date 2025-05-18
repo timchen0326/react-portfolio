@@ -95,6 +95,12 @@
           content: 'PORTFOLIO';
         }
       }
+
+      a.work-link {
+        &:after {
+          content: 'WORK';
+        }
+      }
   
       a.active {
         svg {

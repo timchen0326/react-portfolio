@@ -1,0 +1,16 @@
+{
+  "experiences": [
+        {
+      "role": "Frontend Software Engineer Intern",
+      "company": "MAYOHR",
+      "period": "May 2024 – August 2024",
+      "description": "Core-engineered on MAYOHR’s frontend using TypeScript, RESTful APIs, and React; developed a high-traffic website with TypeScript, HTML, and CSS, reducing resolution time by 30%; simulated and analyzed datasets with Python for front-end testing, cutting integration bottlenecks by 25%; and designed data-access features in collaboration with product managers, boosting troubleshooting efficiency by 40%."
+    },
+    {
+      "role": "Events Executive",
+      "company": "ROCSAUT - University of Toronto",
+      "period": "April 2023 – March 2024",
+      "description": "Organized large-scale events for 250+ attendees, cutting costs by 15% while adhering to university policies; conducted Excel-based analyses (Pivot Tables) to optimize logistics and mitigate risks; and demonstrated strong communication and organizational skills in a fast-paced environment."
+    }
+  ]
+}
