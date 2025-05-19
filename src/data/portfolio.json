@@ -1,6 +1,13 @@
 {
   "portfolio": [
     {
+    "title": "Student Habits & Academic Performance Analysis",
+    "description": "Python, pandas, seaborn, scikit-learn, Quarto",
+    "cover": "/portfolio/Screenshot 2025-05-18 175058.png",
+    "link": "https://timchen0326.github.io/portfolio-website/student-analysis.html"
+    },
+
+    {
       "title": "CSC311 ML Challenge",
       "description": "Python, scikit-learn, Streamlit",
       "cover": "/portfolio/Screenshot 2025-05-16 at 8.01.21 PM.png",
