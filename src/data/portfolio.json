@@ -1,6 +1,12 @@
 {
   "portfolio": [
     {
+      "title": "Job Tracker",
+      "description": "React, TypeScript, Tailwind CSS, Supabase",
+      "cover": "/portfolio/Screenshot 2025-05-21 001529.png",
+      "link": "https://timchen0326.github.io/job-tracker/"
+    },
+    {
     "title": "Student Habits & Academic Performance Analysis",
     "description": "Python, pandas, seaborn, scikit-learn, Quarto",
     "cover": "/portfolio/Screenshot 2025-05-18 175058.png",
