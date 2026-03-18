@@ -31,17 +31,19 @@ const Sidebar = () => {
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink 
+        <NavLink
           exact="true"
           activeclassname="active"
           to="/"
+          aria-label="Home"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink 
+        <NavLink
           activeclassname="active"
           className="about-link"
           to="/about"
+          aria-label="About"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -49,6 +51,7 @@ const Sidebar = () => {
           activeclassname="active"
           className="portfolio-link"
           to="/portfolio"
+          aria-label="Portfolio"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
@@ -57,6 +60,7 @@ const Sidebar = () => {
           activeclassname="active"
           className="work-link"
           to="/work"
+          aria-label="Work Experience"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
@@ -65,6 +69,7 @@ const Sidebar = () => {
           activeclassname="active"
           className="contact-link"
           to="/contact"
+          aria-label="Contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />

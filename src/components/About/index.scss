@@ -46,7 +46,7 @@
   }
   .face4 {
     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    color: #5ed4f4;
+    color: #61dafb;
   }
   .face5 {
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
@@ -78,6 +78,24 @@
   83% {
     transform: rotateX(90deg);
   }
+}
+
+.skills-pills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  background: rgba(199, 255, 0, 0.1);
+  border: 1px solid #C7FF00;
+  color: #C7FF00;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -5,9 +5,8 @@ import {
   faJsSquare,
   faPython,
   faRProject,
-  faJava,
+  faReact,
 } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
@@ -34,14 +33,27 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m an ambitious front-end developer and data analyst looking to work in a team where I can use React, TypeScript, and charting libraries to build responsive interfaces and dashboards that help teams make decisions.
-          </p>
-          <p align="LEFT">
-            I’m confident, detail-oriented, and curious. Whether I’m integrating an API in React, cleaning data in Python, or designing a user interface, I focus on quality and performance.
+            I'm a software engineer and data analyst based in Toronto. I build
+            full-stack web apps with React and TypeScript, and turn raw data into
+            clear, actionable insights using Python and R. My internship at MAYOHR
+            cut resolution time by 30% and improved troubleshooting efficiency by
+            40%—I care about work that actually moves the needle.
           </p>
           <p>
-            If I had to describe myself in one sentence, I’m someone who combines front-end development with data analysis to turn data into clear, useful information for users.
+            I'm detail-oriented and curious. Whether I'm integrating a REST API,
+            cleaning a messy dataset, or tuning a machine learning model, I focus
+            on quality and performance.
           </p>
+          <p>
+            Outside of code I follow basketball closely—which is probably why
+            Hoops Hub was one of the first things I built.
+          </p>
+
+          <div className="skills-pills">
+            {['TypeScript','React','Python','R','SQL','Supabase','Tailwind','Tableau'].map(skill => (
+              <span key={skill} className="skill-pill">{skill}</span>
+            ))}
+          </div>
         </div>
 
         <div className="stage-cube-cont">
@@ -56,7 +68,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faJsSquare} />
               </div>
               <div className="face4">
-                <FontAwesomeIcon icon={faJava} />
+                <FontAwesomeIcon icon={faReact} />
               </div>
               <div className="face5">
                 <FontAwesomeIcon icon={faPython} />
@@ -67,7 +79,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

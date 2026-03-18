@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react'
-import Loader from 'react-loaders'
 import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
@@ -20,6 +19,9 @@ L.Icon.Default.mergeOptions({
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [isSending, setIsSending] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
+  const [sendError, setSendError] = useState(false)
   const form = useRef()
 
   useEffect(() => {
@@ -31,16 +33,24 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setIsSending(true)
+    setSendError(false)
 
     emailjs
-      .sendForm('service_9zmvmm8', 'template_0d9lvno', form.current, 'ldpvuQWFWE9-Ov2Ph')
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          setIsSending(false)
+          setSubmitted(true)
         },
         () => {
-          alert('Failed to send the message, please try again')
+          setIsSending(false)
+          setSendError(true)
         }
       )
   }
@@ -62,25 +72,41 @@ const Contact = () => {
             questions, don't hesitate to contact me using the form below.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input placeholder="Email" type="email" name="email" required />
-                </li>
-                <li>
-                  <input placeholder="Subject" type="text" name="subject" required />
-                </li>
-                <li>
-                  <textarea placeholder="Message" name="message" required />
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
-            </form>
+            {submitted ? (
+              <div className="success-message">
+                <p>Message sent! I'll get back to you soon.</p>
+              </div>
+            ) : (
+              <form ref={form} onSubmit={sendEmail}>
+                <ul>
+                  <li className="half">
+                    <input placeholder="Name" type="text" name="name" required />
+                  </li>
+                  <li className="half">
+                    <input placeholder="Email" type="email" name="email" required />
+                  </li>
+                  <li>
+                    <input placeholder="Subject" type="text" name="subject" required />
+                  </li>
+                  <li>
+                    <textarea placeholder="Message" name="message" required />
+                  </li>
+                  {sendError && (
+                    <li className="error-message">
+                      Failed to send. Please try again.
+                    </li>
+                  )}
+                  <li>
+                    <input
+                      type="submit"
+                      className="flat-button"
+                      value={isSending ? 'SENDING…' : 'SEND'}
+                      disabled={isSending}
+                    />
+                  </li>
+                </ul>
+              </form>
+            )}
           </div>
         </div>
         <div className="info-map">
@@ -97,12 +123,11 @@ const Contact = () => {
           <MapContainer center={[43.6532, -79.3832]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[43.6532, -79.3832]}>
-              <Popup>Tim lives here, come over for a cup of coffee</Popup>
+              <Popup>Tim's location — Toronto, ON</Popup>
             </Marker>
           </MapContainer>
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   )
 }
